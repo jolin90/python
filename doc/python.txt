@@ -1,0 +1,17 @@
+Python 绝对简明手册
+http://wiki.woodpecker.org.cn/moin/PyAbsolutelyZipManual
+
+Py标准库手册
+http://wiki.woodpecker.org.cn/moin/PythonStandardLib
+
+tab键补全 >>>>
+# /usr/local/lib/python2.7/dist-packages
+# python startup file
+
+import sys
+import readline
+import rlcompleter
+import os
+readline.parse_and_bind('tab: complete')
+histfile = os.path.join(os.environ['HOME'], '.pythonhistory')
+tab键补全 <<<<
