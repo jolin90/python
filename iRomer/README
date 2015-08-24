@@ -1,0 +1,7 @@
+1. sudo apt-get install python-wxtools
+
+# 2. sudo apt-get install python-ctypeslib                                                                                             
+
+# make
+
+sudo python iRomer.py -d /dev/ttyXXX
