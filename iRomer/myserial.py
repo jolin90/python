@@ -61,7 +61,7 @@ class MySerial(object):
         if r1[0] != 0x3c:
             print "first character is not 0x3c, is 0x%x" % r1[0]
             return -2
-        
+
         r2 = []
         for i in range(r1[1]+1):
             buf = self.serial.read(size=1)
@@ -84,15 +84,12 @@ class MySerial(object):
         self.serial.close()
 
 if __name__ == '__main__':
+    print os.name
     print getports()
     list = [0x3b,0x4,0x5,0x34,0x1,0x0,0xf]
     print check_sum(list)
-    ser = MySerial("/dev/ttyUSB0", 115200, 1)
+    # ser = MySerial("/dev/ttyUSB0", 115200, 1)
     # ser = MySerial("COM6", 115200, 1)
-    ser.write(list)
-    print check_sum(ser.read())
-    ser.close()
-
-    
-
-
+    # ser.write(list)
+    # print check_sum(ser.read())
+    # ser.close()

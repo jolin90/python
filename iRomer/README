@@ -1,7 +1,12 @@
 1. sudo apt-get install python-wxtools
 
-# 2. sudo apt-get install python-ctypeslib                                                                                             
+# 2. sudo apt-get install python-ctypeslib
 
 # make
 
 sudo python iRomer.py -d /dev/ttyXXX
+
+
+# for serial
+sudo sudo apt install python-pip
+pip install pyserial
